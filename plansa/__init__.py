@@ -9,7 +9,6 @@ from clldutils.svg import pie, icon, data_url
 
 # we must make sure custom models are known at database initialization!
 from plansa import models
-from plansa.interfaces import IEcoregion
 
 
 class LanguageByFamilyMapMarker(util.LanguageByFamilyMapMarker):
@@ -31,7 +30,7 @@ def main(global_config, **settings):
     config.include('clld.web.app')
 
     config.include('clldmpg')
-    config.register_resource('ecoregion', models.Ecoregion, IEcoregion, with_index=True)
+    config.include('pytsammalex.clld')
 
     config.registry.registerUtility(LanguageByFamilyMapMarker(), IMapMarker)
 

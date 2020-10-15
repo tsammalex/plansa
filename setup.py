@@ -20,11 +20,9 @@ setup(
     zip_safe=False,
     install_requires=[
         'clld',  # >=7.0
-
+        'pytsammalex[clld]',
         'clld-glottologfamily-plugin>=4.0',
         'pyglottolog',
-
-
         'clldmpg',
 
 ],

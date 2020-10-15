@@ -6,7 +6,7 @@ from clld.web.util.htmllib import HTML, literal
 from clld.db.meta import DBSession
 from clld.db.util import as_int
 
-from plansa.models import Biome
+from pytsammalex.clld.models import Biome
 
 
 OPTIONS = {'show_labels': True, 'icon_size': 20, 'max_zoom': 8}
