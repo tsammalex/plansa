@@ -19,15 +19,15 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'clld',  # >=7.0
+        'clld>=8',  # >=7.0
         'pytsammalex[clld]',
         'clld-glottologfamily-plugin>=4.0',
         'pyglottolog',
-        'clldmpg',
+        'clldmpg>=4.2',
 
 ],
 extras_require={
-        'dev': ['flake8', 'waitress'],
+        'dev': ['flake8', 'waitress', 'psycopg2'],
         'test': [
             'mock',
             'pytest>=5.4',
